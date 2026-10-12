@@ -1,4 +1,4 @@
-:root{color-scheme:light;--indigo-700:#1730e8;--blue-600:#0a5cf0;--sky-400:#14b8ee;--sky-50:#effaff;--blue-50:#eaf1ff;--navy-900:#0a1626;--navy-800:#0f2034;--blue-700:#0b4ed8;--navy-line:#1e3450;--ink:var(--navy-900);--slate-600:#4a5068;--blue-100:#dbe6ff;--surface-0:#ffffff;--surface-50:#f4f6fb;--line-200:#e1e6f0;--on-brand:#ffffff;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;--space-12:48px;--space-16:64px;--space-24:112px;--radius-sm:10px;--radius-md:18px;--radius-lg:28px;--radius-pill:999px;--shadow-card:0 1px 2px rgba(11,15,28,0.04), 0 12px 32px -12px rgba(11,15,28,0.14);--shadow-lift:0 24px 48px -16px rgba(10,92,240,0.28);--shadow-glow:0 0 0 1px rgba(20,184,238,0.35), 0 18px 60px -12px rgba(23,48,232,0.55);--font-display:"Playfair Display", Georgia, "Times New Roman", serif;--font-body:"Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;}/* Hookslink site stylesheet — every value comes from tokens.css (var(--token)). */
+:root{color-scheme:light;--indigo-700:#1730e8;--blue-600:#0a5cf0;--sky-400:#14b8ee;--sky-50:#effaff;--blue-50:#eaf1ff;--navy-900:#0a1626;--navy-800:#0f2034;--blue-700:#0b4ed8;--navy-line:#1e3450;--ink:var(--navy-900);--slate-600:#4a5068;--blue-100:#dbe6ff;--surface-0:#ffffff;--surface-50:#f4f6fb;--line-200:#e1e6f0;--on-brand:#ffffff;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;--space-12:48px;--space-16:64px;--space-24:112px;--radius-sm:10px;--radius-md:18px;--radius-lg:28px;--radius-pill:999px;--shadow-card:0 1px 2px rgba(11,15,28,0.04), 0 12px 32px -12px rgba(11,15,28,0.14);--shadow-lift:0 24px 48px -16px rgba(10,92,240,0.28);--shadow-glow:0 0 0 1px rgba(20,184,238,0.35), 0 18px 60px -12px rgba(23,48,232,0.55);--font-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;--font-body:"DM Sans", "Segoe UI", system-ui, sans-serif;}/* Hookslink site stylesheet — every value comes from tokens.css (var(--token)). */
 .hl, .hl * { box-sizing: border-box; }
 .hl { margin: 0; font-family: var(--font-body); font-size: 16px; line-height: 1.65; color: var(--ink); background: var(--surface-0); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 .hl img { max-width: 100%; display: block; }
@@ -509,7 +509,7 @@
 .chip-glass { display: inline-flex; align-items: center; gap: 10px; padding: 11px 22px; border-radius: var(--radius-pill); border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.06); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-size: 16px; font-weight: 500; color: var(--on-brand); }
 .chip-glass svg { width: 18px; height: 18px; color: var(--sky-400); }
 .hero2 .t-hero { font-family: var(--font-display); font-size: 84px; line-height: 1.1; letter-spacing: -0.035em; font-weight: 500; margin: 34px 0 28px; text-wrap: balance; }
-.t-hero .accent { font-family: "JetBrains Mono", ui-monospace, monospace; font-weight: 600; letter-spacing: -0.04em; color: var(--sky-400); }
+.t-hero .accent { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.04em; color: var(--sky-400); }
 .t-hero .accent i { font-style: normal; color: var(--blue-600); }
 .hero2 p { font-size: 20px; line-height: 1.6; color: var(--blue-100); max-width: 760px; margin: 0 auto; }
 .hero2 .ctas { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 42px; }
@@ -625,16 +625,15 @@
 .chip-glass .cg-tail { margin-left: -10px; }
 
 /* =========================================================
-   PROFESSIONAL, CLASSIC TYPE — Playfair Display + Source Sans 3
+   BASE TYPE SCALE (fonts set at end of file)
    ========================================================= */
 .hl { font-size: 17px; }
 .hl h1, .hl h2, .hl h3, .hl h4, .hl .num, .t-xl, .t-h1, .t-h2, .t-h3, .t-h4, .price .pname, .price .amt, .step .n, .mission { font-family: var(--font-display); letter-spacing: -0.01em; }
 .hl h1, .hl h2 { font-weight: 600; }
 .hl h3, .hl h4 { font-weight: 600; letter-spacing: 0; }
 .t-h4, .svc h4, .why-item h4 { font-size: 20px; }
-.grad { font-style: italic; }
 .hero2 .t-hero { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.015em; line-height: 1.08; }
-.hero2 .t-hero .accent { font-family: var(--font-display); font-style: italic; font-weight: 600; letter-spacing: -0.01em; }
+.hero2 .t-hero .accent { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.01em; }
 @media (max-width: 760px) { .hero2 .t-hero .accent { font-size: 1em; } }
 .eyebrow { font-family: var(--font-body); font-weight: 700; letter-spacing: 0.16em; }
 .btn, .nav li a, .chip-glass, .float-card b, .quote .who b, .foot h5 { font-family: var(--font-body); }
@@ -910,3 +909,16 @@ body{margin:0;background:var(--surface-0)}
 
 @media (prefers-reduced-motion: reduce){.js .hl .rv.in{animation:none}}
 .scroll-chip { right: 84px; } @media (max-width: 760px) { .scroll-chip { right: 24px; } }
+
+/* TYPE: Bricolage Grotesque (headings) + DM Sans (body) */
+.hl h1, .hl h2, .hl h3, .hl h4, .hl .num, .t-xl, .t-h1, .t-h2, .t-h3, .t-h4, .price .pname, .price .amt, .step .n, .mission, .faq-item summary, .cc-txt strong, .cc-mark.mono b, .av-txt { font-family: var(--font-display); }
+.hl h1, .hl h2, .t-xl, .t-h1, .t-h2 { font-weight: 700; letter-spacing: -0.03em; }
+.hl h3, .hl h4, .t-h3, .t-h4 { font-weight: 700; letter-spacing: -0.02em; }
+.grad { font-style: normal; }
+.hero2 .t-hero { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.035em; line-height: 1.04; }
+.hero2 .t-hero .accent { font-family: var(--font-display); font-style: normal; font-weight: 700; letter-spacing: -0.035em; }
+.quote blockquote { font-family: var(--font-body); font-style: normal; font-size: 17px; }
+.mission { font-weight: 600; letter-spacing: -0.02em; }
+.stat .num, .price .amt { font-weight: 700; letter-spacing: -0.04em; }
+.faq-item summary { font-weight: 600; letter-spacing: -0.01em; }
+.btn, .nav li a, .chip-glass, .eyebrow, .mbar-call, .mbar-call span { font-family: var(--font-body); }
