@@ -898,8 +898,8 @@
 
 .hl .pg[hidden]{display:none}
 .lg{display:block;background-size:contain;background-repeat:no-repeat;background-position:left center;aspect-ratio:800/398}
-.lg-ink{background-image:url(../img/logo-dark-text.png)}
-.lg-white{background-image:url(../img/logo-white-text.png)}
+.lg-ink{background-image:url(logo-dark-text.png)}
+.lg-white{background-image:url(logo-white-text.png)}
 .nav .lg{height:50px;margin:0} .foot .lg{height:72px;margin-bottom:22px}
 @media (max-width:760px){.nav .lg{height:42px}}
 body{margin:0;background:var(--surface-0)}

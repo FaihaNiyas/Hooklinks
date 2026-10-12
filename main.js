@@ -44,7 +44,7 @@ document.querySelectorAll('canvas.globe').forEach(function(c){
  img.onload=function(){gl.bindTexture(gl.TEXTURE_2D,tx);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGB,gl.RGB,gl.UNSIGNED_BYTE,img);
   gl.generateMipmap(gl.TEXTURE_2D);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR_MIPMAP_LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
   gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.REPEAT);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);ready=1;t0=performance.now();};
- img.src='assets/img/earth-night.jpg';
+ img.src='earth-night.jpg';
  var dpr=Math.min(window.devicePixelRatio||1,1.75),W=0,H=0,t0=performance.now();
  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
  function size(){var r=c.getBoundingClientRect();W=r.width;H=r.height;c.width=Math.max(1,Math.round(W*dpr));c.height=Math.max(1,Math.round(H*dpr));gl.viewport(0,0,c.width,c.height);}
